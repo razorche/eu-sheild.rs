@@ -1,0 +1,162 @@
+//service-bg-two
+.service-bg-two {
+    background: linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0.01) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0.01) 100%);
+    background: -moz-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0.01) 100%);
+    background: -o-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0.01) 100%);
+    background: -ms-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0.01) 100%);
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 753px;
+        height: 753px;
+        right: 5.4%;
+        top: 80px;
+        background: #913bff;
+        opacity: 0.2;
+        filter: blur(300px);
+        z-index: -1;
+    }
+}
+
+.service-bg-three {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 753px;
+        height: 753px;
+        right: 44.4%;
+        top: 80px;
+        background: #913bff;
+        opacity: 0.2;
+        filter: blur(300px);
+        z-index: -1;
+    }
+    .service-shape-3c {
+        position: absolute;
+        z-index: -1;
+        top: 26%;
+        right: 0;
+        animation: float-bob infinite 10s linear;
+        -webkit-animation: float-bob infinite 10s linear;
+    }
+}
+
+//service-details-content-top
+.service-details-content-top {
+    .sect-title {
+        margin-bottom: 17px;
+    }
+}
+
+//tools-list
+.tools-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    span {
+        display: inline-block;
+        background: rgba($white, 0.05);
+        padding: 40px 29px;
+        margin: 15px 20px;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+        @include transition(0.3s);
+        &:hover {
+            background: $theme-color;
+            border-right-color: $theme-color;
+            border-bottom: $theme-color;
+        }
+    }
+    @media (max-width: 1199.98px) {
+        span {
+            padding: 40px 10px;
+        }
+    }
+    @media #{$xs} {
+        span {
+            padding: 40px 10px;
+        }
+    }
+    @media (max-width: 374.98px) {
+        margin-left: 0;
+        span {
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            margin: 15px 0px;
+        }
+    }
+}
+
+//service-video
+.service-video {
+    align-items: center;
+    justify-content: space-between;
+    .service-single-video {
+        position: relative;
+        z-index: 1;
+        .popup-video {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            line-height: 52px;
+            font-size: 18px;
+            background: $white;
+            color: $theme-color;
+            &:hover {
+                color: $white;
+                background: $theme-color;
+            }
+        }
+    }
+}
+
+//service-text-list
+.text-list {
+    li {
+        color: $white;
+        padding-left: 45px;
+        padding-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "\F272";
+            color: white;
+            font-family: "bootstrap-icons";
+            font-weight: 700;
+            position: absolute;
+            font-size: 20px;
+            text-align: center;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            width: 30px;
+            height: 30px;
+            background: #913bff;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+//logo-animated-block
+.logo-animated-block {
+    position: absolute;
+    background: $white;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -6px;
+    top: -88px;
+    .rotate-img {
+        animation: rotation infinite 8s linear;
+        -webkit-animation: rotation infinite 8s linear;
+    }
+    .mark-icon {
+        position: absolute;
+        width: 91px;
+        height: 91px;
+        border: 1px solid rgba(#913bff, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 991.98px) {
+        right: auto;
+        left: 0;
+    }
+    @media (max-width: 767.98px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+//about-img-wrapper
+.about-img-wrapper {
+    .main-img {
+        position: relative;
+        z-index: 2;
+        @media #{$laptop} {
+            width: 100%;
+        }
+        @media #{$lg} {
+            width: 100%;
+        }
+        @media #{$md} {
+            width: 100%;
+        }
+        @media #{$xs} {
+            width: 100%;
+        }
+    }
+    .shape-one {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        right: 15%;
+        bottom: 40px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        animation: rotation infinite 42s linear;
+        -webkit-animation: rotation infinite 42s linear;
+    }
+}
+
+//about-img-wrapper-two
+.about-img-wrapper-two {
+    position: relative;
+    z-index: 1;
+    .main-img {
+        @media #{$xs} {
+            width: 100%;
+        }
+    }
+    .shape-one {
+        position: absolute;
+        left: -5.5rem;
+        bottom: 4.4rem;
+        z-index: 2;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+
+//about-techy
+.about-techy-two {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 490px;
+        height: 490px;
+        right: 23%;
+        top: 16%;
+        background: #913bff;
+        opacity: 0.2;
+        filter: blur(300px);
+        z-index: -1;
+    }
+
+    .about-shape {
+        position: absolute;
+        z-index: -1;
+        &.shape-1b {
+            right: 5.5%;
+            top: 67%;
+            animation: float-bob infinite 35s linear;
+            -webkit-animation: float-bob infinite 35s linear;
+        }
+        &.shape-2b {
+            left: 5.5%;
+            top: 48%;
+            animation: squareMove infinite 25s linear;
+            -webkit-animation: squareMove infinite 25s linear;
+            z-index: -2;
+        }
+
+        &.shape-3b {
+            right: 62.2%;
+            top: 5%;
+            animation: rotation infinite 35s linear;
+            -webkit-animation: rotation infinite 35s linear;
+        }
+        &.shape-4b {
+            right: 71%;
+            top: 85.5%;
+        }
+    }
+    .main-img {
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+}
+
+//about-techy
+.about-techy {
+    position: relative;
+    z-index: 1;
+    &.bg-shape-3c {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 636px;
+            height: 636px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 11%;
+            background: #913bff;
+            opacity: 0.1;
+            filter: blur(300px);
+            -webkit-filter: blur(300px);
+            z-index: -1;
+        }
+    }
+    .about-shape-3c {
+        position: absolute;
+        z-index: -1;
+        &.shape-1b {
+            right: 15.5%;
+            top: 67%;
+            animation: float-bob infinite 35s linear;
+            -webkit-animation: float-bob infinite 35s linear;
+        }
+        &.shape-2b {
+            left: 1.5%;
+            top: 60%;
+            animation: squareMove infinite 25s linear;
+            -webkit-animation: squareMove infinite 25s linear;
+            z-index: -2;
+        }
+
+        &.shape-3b {
+            right: 46.2%;
+            top: 22%;
+            animation: rotation infinite 35s linear;
+            -webkit-animation: rotation infinite 35s linear;
+        }
+        &.shape-4b {
+            right: 44.1%;
+            top: 75.5%;
+        }
+        &.shape-5b {
+            right: 11%;
+            top: 14%;
+        }
+    }
+}
+
+//about-img-wrapper-three
+.about-img-wrapper-three {
+    @media (max-width: 1600px) {
+        .main-img {
+            width: 100%;
+        }
+    }
+}
+
+//about-techy-4d
+.about-techy-4d {
+    position: relative;
+    z-index: 1;
+    .about-shape-4d {
+        position: absolute;
+        z-index: -1;
+        &.shape-1b {
+            right: 14.5%;
+            top: 68%;
+            animation: float-bob infinite 35s linear;
+            -webkit-animation: float-bob infinite 35s linear;
+        }
+        &.shape-2b {
+            left: 1.5%;
+            top: 60%;
+            animation: squareMove infinite 25s linear;
+            -webkit-animation: squareMove infinite 25s linear;
+            z-index: -2;
+        }
+
+        &.shape-3b {
+            right: 46.2%;
+            top: 22%;
+            animation: rotation infinite 35s linear;
+            -webkit-animation: rotation infinite 35s linear;
+        }
+        &.shape-4b {
+            right: 44.1%;
+            top: 75.5%;
+        }
+        &.shape-5b {
+            right: 11%;
+            top: 13%;
+        }
+    }
+}
+
+//about-img-wrapper-four
+.about-img-wrapper-four {
+    .main-img {
+        transform: translateY(-63px);
+        @media (max-width: 1200px) {
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+        @media (max-width: 991.98px) {
+            width: 100%;
+        }
+    }
+    .main-img-two {
+        position: absolute;
+        right: 45px;
+        top: 31%;
+        z-index: 1;
+    }
+    .shape-one {
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        right: 15px;
+    }
+}

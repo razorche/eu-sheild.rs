@@ -1,0 +1,71 @@
+@import url("../design-tokens/eushield-tokens.css");
+
+#eushield-modal-host { all: initial; font-family: var(--eu-font-body); }
+#eushield-modal-host * { box-sizing: border-box; }
+
+.eu-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(13, 17, 32, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.eu-modal-card {
+  width: min(440px, 100%);
+  padding: 28px 26px 22px;
+  border-radius: var(--eu-radius-lg);
+  background: var(--eu-bg-panel);
+  border: 1px solid var(--eu-accent-magenta);
+  box-shadow: var(--eu-shadow-neon), 0 0 40px var(--eu-danger-glow);
+  color: var(--eu-text-primary);
+  text-align: center;
+}
+
+.eu-modal-icon {
+  width: 52px; height: 52px; margin: 0 auto 14px; border-radius: 8px;
+  background: var(--eu-gradient-cta);
+}
+
+.eu-modal-icon::after {
+  content: "!";
+  display: flex; align-items: center; justify-content: center;
+  height: 100%; font-size: 28px; font-weight: 700;
+}
+
+.eu-modal-eyebrow {
+  margin: 0 0 6px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--eu-accent-magenta);
+}
+
+.eu-modal-title { margin: 0 0 12px; font-size: 22px; font-weight: 600; }
+
+.eu-modal-body {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--eu-text-muted);
+}
+
+.eu-modal-detail { margin: 0 0 10px; font-size: 12px; color: var(--eu-text-dim); }
+
+.eu-modal-meta { margin: 0 0 18px; font-size: 11px; color: var(--eu-text-dim); }
+
+.eu-modal-btn {
+  cursor: pointer;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--eu-gradient-cta);
+}

@@ -1,0 +1,219 @@
+//techy-price
+.techy-price {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-wrapper-one {
+    position: relative;
+    z-index: 1;
+    // background: url(/img/bg/price-bg-1c.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 58px 0;
+    @media (max-width: 1199.98px) {
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+}
+
+.price-tab {
+    border: 0;
+    background: #104cba;
+    display: flex;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    width: max-content;
+    .nav-item {
+        display: inline-block;
+        border: 0;
+        .nav-link {
+            color: $white;
+            font-size: 16px;
+            line-height: 20px;
+            font-family: $clash-regular;
+            font-weight: 500;
+            padding: 15px 27px;
+            display: inline-block;
+            text-transform: uppercase;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            border: 0;
+            background: transparent;
+        }
+    }
+    .react-tabs__tab--selected {
+        background: transparent !important;
+        .nav-link {
+            background: $theme-color;
+        }
+    }
+}
+
+.plan {
+    padding: 45px 45px;
+    background: rgba($prime-color, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+    &::before {
+        content: "";
+        background: url("../img/shape/topograph-2c.svg") no-repeat;
+        position: absolute;
+        left: 11px;
+        right: 0;
+        top: 16px;
+        bottom: 0;
+        z-index: -1;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 100%;
+        height: 0%;
+    }
+    &__header {
+        h3 {
+            color: $white;
+            font-size: 36px;
+            font-family: $clash-bold;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $white;
+            margin-bottom: 24px;
+        }
+    }
+    &__price {
+        color: $white;
+        font-size: 36px;
+        font-family: $clash-bold;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(#777c90, 0.1);
+        padding-bottom: 27px;
+        margin-bottom: 25px;
+        sub {
+            font-size: 17px;
+            font-family: $clash-regular;
+            font-weight: 400;
+        }
+    }
+    &__body {
+        li {
+            color: $white;
+            font-size: 17px;
+            padding-left: 35px;
+            padding-bottom: 11px;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "\F272";
+                color: $prime-color;
+                font-family: "bootstrap-icons";
+                font-weight: 700;
+                position: absolute;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                left: 0;
+                top: 2px;
+                z-index: 1;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -ms-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                width: 23px;
+                height: 23px;
+                background: rgba($prime-color, 0.1);
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+    }
+    &__footer {
+        .price-btn {
+            color: $white;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 16px 0;
+            width: 100%;
+            background: $theme-color;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            margin-top: 26px;
+        }
+    }
+    &:hover {
+        background: $prime-color;
+        &::before {
+            height: 100%;
+        }
+        .plan__body li::before {
+            color: $white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+    @media (max-width: 1200px) {
+        padding: 45px 25px;
+    }
+    @media (max-width: 767.98px) {
+        .plan {
+            &__header {
+                h3 {
+                    font-size: 24px;
+                }
+            }
+            &__price {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+//price-bg
+.price-bg {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        right: 22.18%;
+        left: auto;
+        top: 41%;
+        background: #913bff;
+        opacity: 0.2;
+        filter: blur(300px);
+        z-index: -1;
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        right: 59.37%;
+        left: auto;
+        top: 16%;
+        background: #104cba;
+        opacity: 0.2;
+        filter: blur(300px);
+        z-index: -1;
+    }
+}

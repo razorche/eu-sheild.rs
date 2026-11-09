@@ -1,0 +1,96 @@
+//custom-contianer-one
+.custom-contianer-one {
+    max-width: 1440px !important;
+    padding: 102px 0 66px 0;
+}
+
+//counter-style-one
+.counter-style-one {
+    text-align: center;
+    h3 {
+        color: $white;
+        font-size: 48px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: " ";
+            position: absolute;
+            background: $second-color;
+            width: 50px;
+            height: 3px;
+            top: 128%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        @media #{$lg} {
+            font-size: 32px;
+        }
+        @media #{$md} {
+            font-size: 32px;
+        }
+        @media #{$xs} {
+            font-size: 32px;
+        }
+    }
+    h4 {
+        color: $white;
+        font-size: 24px;
+        font-family: $clash-medium;
+        font-weight: 500;
+    }
+}
+
+//count-list
+.count-list {
+    padding-left: 15px;
+    li {
+        border-bottom: 1px solid rgba($white, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 45px;
+        &:last-child {
+            border: 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    @media #{$xs} {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+//counter-style-two
+.counter-style-two {
+    h3 {
+        color: $white;
+        font-size: 48px;
+        font-weight: 700;
+        font-family: $clash-bold;
+        margin-right: 28px;
+    }
+    p {
+        line-height: 1.2;
+        width: 140px;
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}

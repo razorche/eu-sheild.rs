@@ -1,0 +1,290 @@
+/* Scope overrides when Cybal shell is active inside React root */
+.eushield-cybal-site {
+  background: #14192d;
+
+  .main-page-wrapper {
+    background: #14192d;
+  }
+
+  a.theme_btn,
+  .theme_btn {
+    display: none;
+  }
+
+  #navigation .site-logo {
+    width: auto;
+    min-width: 200px;
+  }
+
+  .eushield-logo {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+
+  .eushield-logo-footer {
+    height: 48px;
+    width: auto;
+    margin-bottom: 16px;
+  }
+
+  .eushield-footer-mail {
+    color: #18fef5 !important;
+    font-weight: 500;
+
+    &:hover {
+      color: #ffffff !important;
+      text-decoration: underline;
+    }
+  }
+
+  .eushield-check-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* Techy template sets headings to dark navy — override on Cybal dark shell */
+  h2,
+  h3,
+  h4,
+  .h2,
+  .h3,
+  .h4 {
+    color: #f2f6ff !important;
+  }
+
+  h3,
+  .h3 {
+    color: #e4ebfa !important;
+  }
+
+  .section-title h2,
+  .ab_content h2,
+  .single_service h2,
+  .pricingTable .title {
+    color: #ffffff !important;
+  }
+
+  .section-title span,
+  .ab_content > span {
+    color: #f2f6ff !important;
+    background: rgba(24, 254, 245, 0.22) !important;
+    border: 1px solid rgba(24, 254, 245, 0.35);
+  }
+
+  .single_service p,
+  .ab_content p,
+  .section-title p {
+    color: rgba(255, 255, 255, 0.82) !important;
+  }
+
+  .abmv h4 {
+    color: #f2f6ff !important;
+  }
+
+  .count_area .single-project h2 {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+
+.eushield-hero-bg {
+  &::before {
+    background: linear-gradient(
+      105deg,
+      rgba(13, 17, 32, 0.94) 0%,
+      rgba(13, 17, 32, 0.82) 42%,
+      rgba(13, 17, 32, 0.25) 100%
+    ) !important;
+  }
+
+  .hero-text p {
+    max-width: 560px;
+  }
+}
+
+.eushield-why-bg::before,
+.eushield-footer-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 32, 0.82);
+  pointer-events: none;
+}
+
+.eushield-why-bg,
+.eushield-footer-bg {
+  position: relative;
+
+  > .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.single_service img:first-of-type {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.eushield-page-hero {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 17, 32, 0.75);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.eushield-photo-rounded {
+  border-radius: 14px;
+  border: 1px solid rgba(24, 254, 245, 0.22);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.eushield-download-pill {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background: rgba(24, 254, 245, 0.15);
+  border: 1px solid rgba(24, 254, 245, 0.35);
+  color: #18fef5;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+.eushield-sandbox {
+  background: #1a213a;
+  border: 1px solid rgba(24, 254, 245, 0.25);
+  border-radius: 8px;
+  padding: 24px;
+
+  button {
+    background: transparent;
+    font-family: Lexend, sans-serif;
+    cursor: pointer;
+    appearance: none;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    background: #0d1120;
+    border: 1px solid rgba(24, 254, 245, 0.25);
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: Lexend, sans-serif;
+    margin-top: 12px;
+  }
+
+  .eushield-preset-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+
+  .eushield-preset-chip {
+    border: 1px solid rgba(24, 254, 245, 0.45);
+    background: rgba(13, 17, 32, 0.9);
+    color: #e8f4ff;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      border-color: #18fef5;
+      color: #18fef5;
+      box-shadow: 0 0 16px rgba(24, 254, 245, 0.2);
+    }
+
+    &.is-active {
+      background: rgba(24, 254, 245, 0.18);
+      border-color: #18fef5;
+      color: #ffffff;
+      box-shadow: 0 0 20px rgba(24, 254, 245, 0.25);
+    }
+  }
+
+  .eushield-view-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 12px;
+  }
+
+  .eushield-view-btn {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(13, 17, 32, 0.85);
+    color: #f2f6ff;
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: all 0.2s ease;
+
+    &:hover:not(.is-active) {
+      border-color: #18fef5;
+      color: #18fef5;
+    }
+
+    &.is-active {
+      border: none;
+      color: #fff;
+      background-image: linear-gradient(to right, #0196e7 0%, #ff00a4 51%, #ff00a4 100%);
+      background-size: 200% auto;
+      box-shadow: 0 8px 24px rgba(1, 150, 231, 0.35);
+    }
+  }
+
+  .eushield-sandbox-output,
+  pre {
+    background: #0d1120;
+    border: 1px solid rgba(24, 254, 245, 0.15);
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.92);
+    min-height: 80px;
+    white-space: pre-wrap;
+    border-radius: 4px;
+    font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+  }
+}
+
+.eushield-privacy-cybal {
+  .eushield-legal-doc {
+    background: #1a213a;
+    border: 1px solid rgba(24, 254, 245, 0.2);
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #f2f6ff !important;
+  }
+
+  p,
+  li {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+}

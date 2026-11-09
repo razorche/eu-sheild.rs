@@ -1,0 +1,181 @@
+//faq-que-list
+.faq-que-list {
+    .accordion-item {
+        border: 0;
+        background-color: transparent;
+        margin-bottom: 40px;
+        button:focus,
+        input:focus,
+        input:focus,
+        textarea,
+        textarea:focus {
+            outline: 0;
+        }
+        .accordion__button,
+        .accordion__button[aria-expanded="true"],
+        .accordion__button[aria-expanded="false"] {
+            position: relative;
+            z-index: 1;
+        }
+
+        .accordion__button[aria-expanded="true"]::before {
+            content: "\F286";
+            position: absolute;
+            font-family: "bootstrap-icons";
+            font-size: 20px;
+            font-weight: 300;
+            color: $white;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            transition: 0.3s linear;
+            z-index: 1;
+            @media #{$md} {
+                right: 10px;
+                font-size: 16px;
+            }
+            @media #{$xs} {
+                right: 10px;
+                font-size: 16px;
+            }
+        }
+
+        .accordion__button[aria-expanded="false"]::before {
+            content: "\F286";
+            position: absolute;
+            font-family: "bootstrap-icons";
+            font-size: 20px;
+            font-weight: 300;
+            color: $white;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            transition: 0.3s linear;
+            z-index: 1;
+            @media #{$md} {
+                right: 10px;
+                font-size: 16px;
+            }
+            @media #{$xs} {
+                right: 10px;
+                font-size: 16px;
+            }
+        }
+        .accordion__button {
+            display: block;
+            width: 100%;
+            transition: unset;
+            color: $white;
+            font-size: 24px;
+            font-family: $clash-semibold;
+            font-weight: 600;
+            line-height: 1.875rem;
+            border: 0;
+            box-shadow: none;
+            text-decoration: 1px solid $white;
+            background-color: $theme-color;
+            border-radius: 0;
+            padding: 0;
+            padding: 32px 31px 24px 30px;
+            position: relative;
+            box-shadow: 0;
+            -webkit-transition: unset;
+            -moz-transition: unset;
+            -ms-transition: unset;
+            -o-transition: unset;
+            word-wrap: normal;
+            display: inline-block;
+            &.collapsed {
+                padding-bottom: 24px;
+                background: rgba($white, 0.05);
+                border-bottom: 2px solid $white;
+            }
+            @media #{$md} {
+                padding: 21px 20px;
+                font-size: 18px;
+            }
+            @media #{$xs} {
+                padding: 21px 15px;
+                font-size: 18px;
+            }
+            // &:not(.collapsed) {
+            //     color: $white;
+            //     background-color: unset;
+            //     box-shadow: unset;
+            // }
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            }
+
+            // &::before {
+            //     content: "\F286";
+            //     position: absolute;
+            //     font-family: "bootstrap-icons";
+            //     font-size: 20px;
+            //     font-weight: 300;
+            //     color: $white;
+            //     right: 30px;
+            //     top: 50%;
+            //     transform: translateY(-50%) rotate(180deg);
+            //     transition: 0.3s linear;
+            //     z-index: 1;
+            //     @media #{$md} {
+            //         right: 10px;
+            //         font-size: 16px;
+            //     }
+            //     @media #{$xs} {
+            //         right: 10px;
+            //         font-size: 16px;
+            //     }
+            // }
+            &::after {
+                display: none;
+            }
+        }
+        .accordion__button[aria-expanded="false"] {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-bottom: 2px solid $white;
+        }
+        .collapsed {
+            border: 0;
+            &::before {
+                // content: "\F282";
+                color: $theme-color;
+                transform: translateY(-50%) rotate(0deg);
+            }
+        }
+        .accordion-body {
+            background: $theme-color;
+            padding: 0;
+            padding: 0 30px 37px 30px;
+            @media #{$md} {
+                padding: 0 20px 24px 20px;
+            }
+            @media #{$xs} {
+                padding: 0 15px 24px 15px;
+            }
+            p {
+                color: $white;
+            }
+        }
+    }
+}
+
+.accordion-style-two {
+    .accordion-item {
+        border: 1px solid $theme-color;
+
+        .accordion__button {
+            background: transparent;
+            border: none;
+        }
+        .accordion__button[aria-expanded="false"] {
+            background-color: transparent;
+            border-bottom: 0;
+        }
+        .accordion-body {
+            background: transparent;
+        }
+    }
+}

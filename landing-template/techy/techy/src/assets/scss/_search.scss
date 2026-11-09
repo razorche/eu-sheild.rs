@@ -1,0 +1,125 @@
+/* Full screen search
+-------------------------------------------------------*/
+.offcanvas-tops {
+	background: #913bff;
+	height: 350px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.search-close {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		font-size: 30px;
+		color: #fff;
+		cursor: pointer;
+	}
+	@media (max-width: 991.98px) {
+		height: 30vh;
+	}
+}
+.search-wrap {
+	button {
+		background: no-repeat;
+		border: 0;
+		font-size: 30px;
+		position: absolute;
+		right: 3rem;
+		top: 2rem;
+		color: $white;
+		&:hover {
+			color: rgb(255, 0, 0);
+		}
+		@media only screen and (max-width: 600px) {
+			right: 1rem;
+			top: 1rem;
+		}
+	}
+	input {
+		color: $white;
+		font-size: 80px;
+		width: 100%;
+		background: transparent;
+		border: 0;
+		text-align: center;
+		display: inline-block;
+		height: auto;
+		padding: 0;
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 2px solid $white;
+
+		&::placeholder {
+			color: $white;
+			padding-bottom: 80px;
+			font-size: 80px;
+			font-family: $clash-medium;
+			@media #{$laptop} {
+				font-size: 50px;
+			}
+			@media #{$lg} {
+				font-size: 40px;
+			}
+			@media #{$md} {
+				font-size: 30px;
+			}
+			@media #{$xs} {
+				font-size: 20px;
+			}
+		}
+		&::-moz-placeholder,
+		&::-webkit-placeholder,
+		&::-o-placeholder,
+		&::-ms-placeholder {
+			color: $white;
+			padding-bottom: 80px;
+			font-size: 80px;
+			font-family: $clash-medium;
+			@media #{$laptop} {
+				font-size: 50px;
+			}
+			@media #{$lg} {
+				font-size: 40px;
+			}
+			@media #{$md} {
+				font-size: 30px;
+			}
+			@media #{$xs} {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+.search-area {
+	a {
+		display: inline-block;
+		font-size: 20px;
+		color: $white;
+		margin-right: 31px;
+		line-height: 1;
+	}
+}
+
+.search-form-input {
+	background: #913bff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@media only screen and (max-width: 600px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+	top: 0;
+	z-index: 999;
+	background: transparent !important;
+	height: 250px;
+}

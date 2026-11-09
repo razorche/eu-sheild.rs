@@ -1,0 +1,77 @@
+//error-page-bg
+.error-page-bg {
+    background: url(../img/shape/spiral-1e.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 566px;
+        height: 566px;
+        left: auto;
+        right: 17.44%;
+        top: 5%;
+        background: #913bff;
+        opacity: 0.3;
+        filter: blur(300px);
+        z-index: -1;
+    }
+    .error-shape {
+        position: absolute;
+        z-index: -1;
+        left: auto;
+        right: 42.5%;
+        top: 13%;
+    }
+    .error-page-wrapper {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+//coming-soon-page
+.coming-soon-page {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 513px;
+        height: 513px;
+        left: auto;
+        right: 32.65%;
+        top: 25%;
+        background: #913bff;
+        opacity: 0.3;
+        filter: blur(300px);
+        z-index: -1;
+    }
+    .coming-shape {
+        position: absolute;
+        z-index: -1;
+        top: 25%;
+        left: auto;
+        right: 28.2%;
+    }
+}
+
+//coming-page-wrapper
+.coming-page-wrapper {
+    .sect-title {
+        margin-bottom: 28px;
+    }
+    p {
+        margin-bottom: 37px;
+    }
+    h3 {
+        margin-bottom: 30px;
+        @media #{$md} {
+            font-size: 18px;
+        }
+        @media #{$xs} {
+            font-size: 18px;
+        }
+    }
+}

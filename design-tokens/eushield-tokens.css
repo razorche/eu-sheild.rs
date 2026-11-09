@@ -1,0 +1,28 @@
+/* EUShield — Cybal-dark shared design tokens */
+:root {
+  --eu-bg-deep: #0d1120;
+  --eu-bg-panel: #14192d;
+  --eu-bg-elevated: #1a213a;
+  --eu-cybal-cyan: #18fef5;
+  --eu-cyan-muted: rgba(24, 254, 245, 0.2);
+  --eu-prime-blue: #0196e7;
+  --eu-accent-magenta: #ff00a4;
+  --eu-gradient-cta: linear-gradient(to right, #0196e7 0%, #ff00a4 51%, #ff00a4 100%);
+  --eu-accent-green: #00e676;
+  --eu-text-primary: #ffffff;
+  --eu-text-muted: rgba(255, 255, 255, 0.8);
+  --eu-text-dim: rgba(255, 255, 255, 0.45);
+  --eu-danger: #ff3d57;
+  --eu-danger-glow: rgba(255, 0, 164, 0.35);
+  --eu-success-glow: rgba(0, 230, 118, 0.35);
+  --eu-border: rgba(24, 254, 245, 0.25);
+  --eu-border-active: rgba(0, 230, 118, 0.5);
+  --eu-gradient-hero: linear-gradient(180deg, #14192d 0%, #0d1120 100%);
+  --eu-shadow-neon: 0 0 24px rgba(24, 254, 245, 0.25), 0 0 48px rgba(1, 150, 231, 0.15);
+  --eu-shadow-green: 0 0 20px rgba(0, 230, 118, 0.4);
+  --eu-font-display: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --eu-font-body: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --eu-radius-sm: 3px;
+  --eu-radius-md: 8px;
+  --eu-radius-lg: 14px;
+}

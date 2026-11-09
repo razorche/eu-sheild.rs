@@ -1,0 +1,24 @@
+.eushield-copy-clean {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 9999;
+  font-family: Lexend, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border: 1px solid #18fef5;
+  border-radius: 3px;
+  color: #18fef5;
+  background: rgba(20, 25, 45, 0.92);
+  cursor: pointer;
+  box-shadow: 0 0 16px rgba(24, 254, 245, 0.2);
+}
+
+.eushield-copy-clean:hover {
+  background: linear-gradient(to right, #0196e7, #ff00a4);
+  color: #fff;
+  border-color: transparent;
+}

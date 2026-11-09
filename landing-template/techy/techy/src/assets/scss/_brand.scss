@@ -1,0 +1,33 @@
+//brand-logo
+.brand-logo {
+    text-align: center;
+    a {
+        display: inline-block;
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+//brand-area
+.brand-area {
+    z-index: 2;
+    &.brand-bg {
+        background: $prime-color;
+    }
+    .brand-border {
+        border-bottom: 1px dashed rgba($white, 0.1);
+    }
+}
+
+.blur-shape {
+    position: absolute;
+    width: 425px;
+    height: 425px;
+    right: 52.13%;
+    top: 4%;
+    background: #913bff;
+    opacity: 0.2;
+    filter: blur(300px);
+    z-index: -1;
+}

@@ -1,0 +1,128 @@
+//font-weight
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-semi {
+    font-weight: 600;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+.fw-thin {
+    font-weight: 100;
+}
+
+//font-size
+
+.fs-20 {
+    font-size: 20px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-17 {
+    font-size: 17px !important;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+
+.gradient-bg {
+    background: linear-gradient(to bottom, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0));
+    background: -moz-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0));
+    background: -o-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0));
+    background: -ms-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0));
+    background: -webkit-linear-gradient(180deg, rgba(16, 76, 186, 0.1) 0%, rgba(16, 76, 186, 0));
+}
+.grey-bg {
+    background: $grey;
+}
+
+.white-bg {
+    background: $white;
+}
+
+.black-bg {
+    background: $black;
+}
+
+.heding-bg {
+    background: $heding;
+}
+
+.theme-bg {
+    background: $theme-color;
+}
+.prime-bg {
+    background: $prime-color;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.text-white {
+    color: $white;
+}
+.text-prime {
+    color: $prime-color;
+}
+.text-black {
+    color: $black;
+}
+.text-theme {
+    color: $theme-color;
+}
+
+.text-body {
+    color: $body-text-color;
+}
+
+.text-heding {
+    color: $heding;
+}
+
+/*--
+    - fonts
+-----------------------------------------*/
+
+.body-font {
+    font-family: $clash-regular;
+}
+.heding-font {
+    font-family: $clash-bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.capitalize {
+    text-transform: lowercase;
+}
+
+//background-none
+.bg-none {
+    background: none !important;
+}

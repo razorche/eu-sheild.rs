@@ -1,0 +1,368 @@
+//sub-form
+.sub-form {
+    position: relative;
+    z-index: 1;
+    input {
+        border: 0;
+        color: rgba(119, 124, 144, 1);
+        font-size: 17px;
+        background: $white;
+        height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: rgba(119, 124, 144, 1);
+            font-size: 17px;
+        }
+        &::-webkit-placeholder {
+            color: rgba(119, 124, 144, 1);
+            font-size: 17px;
+        }
+        &::-moz-placeholder {
+            color: rgba(119, 124, 144, 1);
+            font-size: 17px;
+        }
+        &::-o-placeholder {
+            color: rgba(119, 124, 144, 1);
+            font-size: 17px;
+        }
+        &::-ms-placeholder {
+            color: $body-text-color;
+            font-size: 17px;
+        }
+    }
+    button {
+        border: 0;
+        color: $white;
+        font-size: 20px;
+        background: $theme-color;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        right: 5px;
+        top: 5px;
+        line-height: 40px;
+        &:hover {
+            background: $prime-color;
+        }
+    }
+}
+
+//comment-form"
+.contact-form {
+    .input-box {
+        position: relative;
+        z-index: 1;
+        label {
+            color: $white;
+            font-size: 17px;
+            font-family: $clash-medium;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        input {
+            color: $body-text-color;
+            font-size: 17px;
+            background: rgba($white, 0.03);
+            border: 0;
+            width: 100%;
+            height: 60px;
+            padding: 0 20px;
+            line-height: 1;
+            &::placeholder {
+                color: $body-text-color;
+            }
+            &::-webkit-placeholder {
+                color: $body-text-color;
+            }
+            &::-moz-placeholder {
+                color: $body-text-color;
+            }
+            &::-o-placeholder {
+                color: $body-text-color;
+            }
+        }
+        textarea {
+            color: $body-text-color;
+            font-size: 17px;
+            background: rgba($white, 0.03);
+            height: 220px;
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 20px;
+            resize: none;
+            &::placeholder {
+                color: $body-text-color;
+            }
+            &::-webkit-placeholder {
+                color: $body-text-color;
+            }
+            &::-moz-placeholder {
+                color: $body-text-color;
+            }
+            &::-o-placeholder {
+                color: $body-text-color;
+            }
+        }
+    }
+    .theme_btn {
+        border: 0;
+    }
+}
+
+//contact-map
+.contact-map {
+    iframe {
+        width: 100%;
+        min-height: 550px;
+        @media (max-width: 991.98px) {
+            min-height: 400px;
+        }
+    }
+}
+
+//contact-form-two
+.contact-form-two {
+    .widget-form {
+        background: transparent;
+        padding: 0;
+        textarea {
+            height: 220px;
+            padding-left: 20px;
+            padding-top: 20px;
+            width: 100%;
+            display: block;
+        }
+    }
+    label {
+        margin-bottom: 6px;
+    }
+    button.theme_btn {
+        border: 0;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 38px;
+    }
+}
+
+.single-info-box {
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(16, 76, 186, 0.4) 0%, rgba(16, 76, 186, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    backdrop-filter: blur(42px);
+    border: 1px solid rgba($white, 0.1);
+    text-align: center;
+    padding: 40px 0 48px 0;
+    @include transition(0.3s);
+    .icon {
+        color: $theme-color;
+        font-size: 35px;
+        background: $white;
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 84px;
+        margin-bottom: 25px;
+        @include transition(0.3s);
+    }
+    span {
+        color: $white;
+        font-size: 24px;
+        font-family: $clash-medium;
+        font-weight: 500;
+        display: block;
+        line-height: 30px;
+    }
+    &:hover {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        .icon {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+    @media #{$lg} {
+        span {
+            font-size: 20px;
+        }
+    }
+    @media #{$xs} {
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+//signup-form
+.signup-form {
+    background: rgba(#104cba, 0.15);
+    margin: 0 97px;
+    padding: 80px;
+    @media (max-width: 1199.98px) {
+        margin: 0 0;
+    }
+    @media #{$xs} {
+        padding: 30px 15px;
+    }
+    .widget-form {
+        background: transparent;
+
+        input {
+            color: rgba($white, 0.6);
+            padding-left: 92px;
+            background: radial-gradient(
+                    97.57% 210.75% at 0.9% 2.98%,
+                    rgba(255, 255, 255, 0.05) 0%,
+                    rgba(255, 255, 255, 0.01) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            // opacity: 0.2;
+            backdrop-filter: blur(42px);
+            border: 0;
+            &::placeholder {
+                color: rgba($white, 0.6);
+            }
+            &::-webkit-placeholder {
+                color: rgba($white, 0.6);
+            }
+            &::-ms-placeholder {
+                color: rgba($white, 0.6);
+            }
+            &::-o-placeholder {
+                color: rgba($white, 0.6);
+            }
+            &::-moz-placeholder {
+                color: rgba($white, 0.6);
+            }
+        }
+    }
+    .input-box {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "\F4E1";
+            color: $white;
+            font-family: "bootstrap-icons";
+            position: absolute;
+            font-size: 25px;
+            left: 15px;
+            top: 15px;
+            z-index: 1;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+        &::after {
+            content: " ";
+            position: absolute;
+            background: rgba($white, 0.1);
+            width: 2px;
+            height: 40px;
+            left: 60px;
+            top: 10px;
+            z-index: 1;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+        &.mail {
+            &::before {
+                content: "\F32F";
+            }
+        }
+        &.phone {
+            &::before {
+                content: "\F5B4";
+            }
+        }
+        &.pass {
+            &::before {
+                content: "\F47A";
+            }
+        }
+    }
+    .input-check {
+        display: flex;
+        align-items: center;
+        input {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: transparent;
+            border: 1px solid $white;
+            border-radius: 3px;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+        input[type="checkbox"] {
+            background-color: transparent;
+        }
+        span {
+            color: $white;
+            font-size: 14px;
+        }
+    }
+    button.theme_btn {
+        font-size: 17px;
+        width: 100%;
+        border: 0;
+        text-align: center;
+        padding: 22px 0;
+    }
+    span.divider {
+        text-align: center;
+        display: block;
+        color: $white;
+        font-size: 17px;
+        font-family: $clash-semibold;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+        padding: 40px 0;
+        &::before {
+            content: " ";
+            position: absolute;
+            width: 230px;
+            height: 2px;
+            left: 0;
+            top: 53px;
+            background: rgba($white, 0.1);
+            z-index: 1;
+        }
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 230px;
+            height: 2px;
+            right: 0;
+            top: 53px;
+            background: rgba($white, 0.1);
+            z-index: 1;
+        }
+    }
+    button.signup-btn {
+        color: #777c90;
+        background: $white;
+        padding: 15px 0;
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+}

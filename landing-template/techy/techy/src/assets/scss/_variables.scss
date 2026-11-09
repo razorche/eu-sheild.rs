@@ -1,0 +1,30 @@
+// Font Family
+$clash-regular: "ClashDisplay-Regular";
+$clash-medium: "ClashDisplay-Medium";
+$clash-semibold: "ClashDisplay-Semibold";
+$clash-bold: "ClashDisplay-Bold";
+
+// Colors ---------------
+$white: #ffffff;
+$black: #000;
+$grey: #f7f7f7;
+$prime-color: #104cba;
+$theme-color: #913bff;
+$body-text-color: rgba(255, 255, 255, 0.7);
+$second-color: #050d36;
+$hr-border-color: rgb(255, 255, 255);
+
+// Heading Color
+$heding: rgba(5, 13, 54, 1);
+
+// Responsive Variables
+$xxl: "only screen and (min-width: 1601px) and (max-width: 1900px)";
+$xl: "only screen and (min-width: 1601px) and (max-width: 1800px)";
+$laptop: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1200px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$xs: "(max-width: 767px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+
+//Landscape-responsive
+$xs-landscape: "only screen and (min-width: 540px) and (max-width: 767px) and (orientation: landscape)";

@@ -1,0 +1,37 @@
+/* marquee div container */
+.marquee-line {
+    // overflow: hidden;
+    background-color: $theme-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    @media (max-width: 1199.98px) {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    .marque-text {
+        font-size: 32px;
+        color: #fff;
+        font-family: $clash-semibold;
+        line-height: 40px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @media (max-width: 991.98px) {
+            font-size: 24px;
+        }
+    }
+
+    .overlay {
+        display: none;
+    }
+}

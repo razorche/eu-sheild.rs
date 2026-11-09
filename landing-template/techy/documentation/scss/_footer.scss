@@ -1,0 +1,38 @@
+/*========== Start footer_area css ==========*/
+
+.footer-area {
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    background: $purple;
+    .row {
+        align-items: center;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+    .f_social_icon {
+        margin-bottom: 0;
+        padding-top: 0;
+        li {
+            a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                color: #8d93a4;
+                border-color: #8d93a4;
+                &:hover {
+                    background: $blue;
+                    border-color: $blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/*========== End footer_area css ==========*/

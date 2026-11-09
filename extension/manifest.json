@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "EUShield - Local Privacy Shield",
+  "short_name": "EUShield",
+  "version": "0.3.0",
+  "description": "Fail-closed local tokenization for ChatGPT & Claude. GDPR-first B2B privacy shield.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "EUShield",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["content/bridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/tokenizer.js",
+        "lib/outbound-processor.js",
+        "content/page-runtime.js",
+        "styles/modal.css",
+        "styles/copy-clean.css",
+        "design-tokens/eushield-tokens.css"
+      ],
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*"
+      ]
+    }
+  ]
+}

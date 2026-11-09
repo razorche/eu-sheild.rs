@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EUShield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../design-tokens/eushield-tokens.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="eu-popup">
+      <header class="eu-header">
+        <div class="eu-brand">
+          <span class="eu-logo-mark" aria-hidden="true"></span>
+          <div>
+            <h1 class="eu-title">EUShield</h1>
+            <p class="eu-subtitle">Local Privacy Shield</p>
+          </div>
+        </div>
+        <span class="eu-badge">EU</span>
+      </header>
+
+      <section class="eu-shield-panel" id="shield-panel">
+        <label class="eu-shield-switch">
+          <input type="checkbox" id="shield-toggle" checked />
+          <span class="eu-switch-track"><span class="eu-switch-thumb"></span></span>
+          <span class="eu-switch-copy">
+            <span class="eu-switch-state" id="shield-label">SHIELD ACTIVE</span>
+            <span class="eu-switch-hint" id="shield-hint">Fail-closed protection enabled</span>
+          </span>
+        </label>
+        <p class="eu-injector-status" id="injector-status">Injector: checking…</p>
+      </section>
+
+      <section class="eu-counter-block">
+        <p class="eu-counter-label">PII redactions today</p>
+        <div class="eu-flip-counter" id="flip-counter" aria-live="polite">
+          <div class="eu-digit"><span>0</span></div>
+          <div class="eu-digit"><span>0</span></div>
+          <div class="eu-digit"><span>0</span></div>
+          <div class="eu-digit"><span>0</span></div>
+        </div>
+        <p class="eu-counter-label eu-counter-label-secondary">Requests blocked today: <strong id="blocked-count">0</strong></p>
+      </section>
+
+      <section class="eu-categories">
+        <h2 class="eu-section-title">Active scrubbers</h2>
+        <ul class="eu-pill-grid" id="category-toggles">
+          <li class="eu-pill eu-pill-active" data-key="names"><span class="eu-pill-dot"></span> Names</li>
+          <li class="eu-pill eu-pill-active" data-key="ibans"><span class="eu-pill-dot"></span> IBANs</li>
+          <li class="eu-pill eu-pill-active" data-key="emails"><span class="eu-pill-dot"></span> Emails</li>
+          <li class="eu-pill eu-pill-active" data-key="amounts"><span class="eu-pill-dot"></span> EUR</li>
+          <li class="eu-pill eu-pill-active" data-key="phones"><span class="eu-pill-dot"></span> Phones</li>
+          <li class="eu-pill eu-pill-active" data-key="customRegex"><span class="eu-pill-dot"></span> Custom RegEx</li>
+        </ul>
+      </section>
+
+      <section class="eu-regex-panel">
+        <label class="eu-section-title" for="custom-pattern">Custom RegEx pattern</label>
+        <input id="custom-pattern" class="eu-input" type="text" placeholder="e.g. CTR-\d{6}" />
+        <button type="button" class="eu-btn-secondary" id="save-regex">Save pattern</button>
+      </section>
+
+      <section class="eu-vault-panel">
+        <p class="eu-vault-line">Active tokens in tab session: <strong id="vault-size">0</strong></p>
+        <button type="button" class="eu-btn-danger" id="purge-vault">Purge local vault</button>
+      </section>
+
+      <section class="eu-test-panel">
+        <label class="eu-section-title" for="test-input">Quick tokenizer test</label>
+        <textarea id="test-input" class="eu-textarea" rows="3" placeholder="Paste sample PII..."></textarea>
+        <button type="button" class="eu-btn-primary" id="run-test">Tokenize</button>
+        <pre id="test-output" class="eu-test-output"></pre>
+      </section>
+
+      <footer class="eu-footer">
+        <a href="https://eushield.eu/privacy-compliance" id="learn-more" target="_blank" rel="noopener">Compliance docs</a>
+      </footer>
+    </div>
+    <script src="../lib/tokenizer.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

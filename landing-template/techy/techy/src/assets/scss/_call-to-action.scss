@@ -1,0 +1,92 @@
+//techy-newsletter
+.techy-newsletter {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 632px;
+        height: 211px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 22%;
+        background: #104cba;
+        opacity: 0.2;
+        filter: blur(100px);
+        z-index: 1;
+        -webkit-filter: blur(100px);
+        -moz-filter: blur(100px);
+        -o-filter: blur(100px);
+        -ms-filter: blur(100px);
+    }
+    .borders {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+//call-to-action
+.call-to-action {
+    background: rgba($prime-color, 0.1);
+    position: relative;
+    z-index: 1;
+    .call-shape {
+        position: absolute;
+        z-index: -1;
+        &.shape-one {
+            top: 60px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &.shape-two {
+            right: 77%;
+            top: 60px;
+        }
+        &.shape-three {
+            top: 77%;
+            left: 7%;
+        }
+        &.shape-four {
+            top: 63%;
+            right: 68%;
+        }
+        &.shape-five {
+            top: 70%;
+            right: 37.5%;
+        }
+        &.shape-six {
+            top: 55px;
+            right: 19%;
+        }
+        &.shape-seven {
+            top: 59%;
+            right: 5%;
+        }
+    }
+}
+
+//call-to-wrapper
+.call-to-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    .title-big {
+        color: $white;
+        font-size: 64px;
+        line-height: 1.2;
+        @media #{$laptop} {
+            font-size: 38px;
+        }
+        @media #{$lg} {
+            font-size: 38px;
+        }
+        @media #{$md} {
+            font-size: 38px;
+        }
+        @media #{$xs} {
+            font-size: 24px;
+        }
+    }
+}

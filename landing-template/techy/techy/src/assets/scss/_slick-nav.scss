@@ -1,0 +1,145 @@
+//slick-nav
+.slick-nav {
+    position: relative;
+    z-index: 1;
+    .slick-arrow {
+        color: $white;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        line-height: 56px;
+        width: 60px;
+        height: 60px;
+        font-size: 0;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: -114px;
+        z-index: 1;
+        @include transition(0.3s);
+        &::before {
+            content: "";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            text-align: center;
+            z-index: 1;
+            transition: all 0.3s ease 0s;
+            transform: translateY(-50%);
+        }
+        &.slick-next {
+            right: 13%;
+            &::before {
+                content: "\f285";
+            }
+        }
+        &.slick-prev {
+            right: 18.5%;
+            left: auto;
+            &::before {
+                content: "\f284";
+            }
+        }
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+    @media #{$lg} {
+        .slick-arrow.slick-next {
+            right: 9%;
+        }
+    }
+    @media #{$md} {
+        .slick-arrow {
+            top: -80px;
+        }
+        .slick-arrow.slick-next {
+            right: 8%;
+        }
+    }
+}
+
+//ul.slick-dots
+ul.slick-dots {
+    position: relative;
+    bottom: unset;
+    text-align: center;
+    padding-top: 60px;
+    li {
+        text-indent: -100000px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin: 0 7px;
+        cursor: pointer;
+        &.slick-active {
+            background: $theme-color;
+        }
+        button::before {
+            display: none;
+        }
+        button::after {
+            display: none;
+        }
+    }
+    @media (max-width: 1200px) {
+        padding-top: 45px;
+    }
+}
+
+// .slick-nav
+.blog-slick {
+    .slick-arrow.slick-prev {
+        right: 7.2%;
+    }
+    .slick-arrow.slick-next {
+        right: 15px;
+    }
+    @media #{$lg} {
+        .slick-arrow.slick-prev {
+            right: 11.2%;
+        }
+    }
+    @media #{$md} {
+        .slick-arrow.slick-prev {
+            right: 13%;
+        }
+    }
+}
+// .slick-nav
+.blog-slick-two {
+    .slick-arrow.slick-prev {
+        right: 7.2%;
+        top: -88px;
+    }
+    .slick-arrow.slick-next {
+        right: 15px;
+        top: -88px;
+    }
+}
+
+.latest-case-video {
+    .slick-arrow.slick-next {
+        top: 78%;
+        right: -16.4rem;
+    }
+    .slick-arrow.slick-prev {
+        top: 78%;
+        right: -11.4rem;
+    }
+    @media (max-width: 991.98px) {
+        .slick-arrow.slick-next,
+        .slick-arrow.slick-prev {
+            display: none !important;
+        }
+    }
+}
